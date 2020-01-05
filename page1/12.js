@@ -1,3 +1,5 @@
+let starttime = new Date().getTime();
+
 function factors(number) {
 	let fact = 0;
 
@@ -32,7 +34,10 @@ while (factorsOfN < 500) {
 	n += iteration;
 
 	factorsOfN = factors(n);
-	console.log("factors count of n is: ", iteration, n, factorsOfN);
+	// console.log("factors count of n is: ", iteration, n, factorsOfN);
 }
 
+let endtime = new Date().getTime();
+
 console.log("ans: ", n);
+console.log("Answer in : " + (endtime - starttime));
